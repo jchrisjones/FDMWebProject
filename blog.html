@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Dougal Blogs</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Karla' />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script"/>
+	<link rel="stylesheet" href="css/bootstrap-navbar-theme.css"/>
+	<link rel="stylesheet" href="css/setup.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div id="page">
+		<header class="container">
+			<div id="menu" class="navbar navbar-default navbar-fixed-top">
+				<div class="navbar-header">
+					<button class="btn btn-success navbar-toggle"
+								   data-toggle="collapse"
+								   data-target=".navbar-collapse"><span class="glyphicon
+								   glyphicon-menu-hamburger"></span></button>
+					<div id="logo">
+						<a href='#'><h3>Dougal Blogs</h3></a>
+					</div>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="nav"><a href="#">Home</a></li>
+						<li class="nav active"><a href="blog.html">Blog</a></li>
+						<li class="nav"><a href="a.html">Create Blog</a></li>
+						<li class="nav"><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="banner" class="row">
+				<img src="images/banner_edit1.jpg" alt="banner" class="col-md-12 img-thumbnail"/>
+			</div>
+		</header>
+		
+		<section id="body"  class="container">
+			<div id="title">
+				<h1>Dougal Blogs. Simple Blogging for simple people<h1>
+			</div>
+			<div class="row hidden-xs">
+				<img src="images/banner_edit1.jpg" alt="Mountain Scene" class="col-sm-2 col-sm-offset-3" />
+				<img src="images/cow01.jpg" alt="toy cows" class="col-sm-2"/>
+				<img src="images/careful_now.jpg" alt="sign" class="col-sm-2"/>
+			</div>			
+			<section id="main" class="col-md-8 col-sm-9" >
+				<h1>5 key learnings from the Innovation Spike Innovation</h1>
+				<p>
+					Last week I took part in the innovation spike at RBS. This post is my personal retrospective of the spike, findings and lessons learned.
+				</p>				
+				<h2>Outline:</h2>
+				<ul>
+					<li>What is an innovation spike?</li>
+					<li>Format of the spike</li>
+					<li>Technologies and tools used</li>
+					<li>Findings and lessons for the future</li>
+				</ul>
+				<h2>What is an innovation spike?</h2>
+				<p>
+					In RBS the innovation spike means an event where small team works in a startup mode, trying to deliver new product or a service by using new technologies. The reasons for the spike are to explore new technologies as well as prove technical possibility and produce proof of concept for business.
+				</p>
+				<p>
+					The prototype that we delivered was functional enough to spawn discussions around business model and to take a look at product from the user perspective. It was also small enough to simply throw away if business assumptions doesn’t hold or technology is not good enough.
+				</p>
+				<p>
+					It is possible there is a better name for this event, however “Innovation spike” sounds great and naming things is hard.
+				</p>
+				<h2>Format of the spike</h2>
+				<p>
+					Our small team had 6 developers, graphics designer and a product owner. As a team we had all the technical and non-technical skills required to work on every aspect of product development.
+				</p>
+				<p>
+					We did prepared a little bit for the spike. Our product owner had a pretty good idea of business that we would like to validate. We had a small infrastructure prepared with some basic tools and did read on the choice of technology for the spike.
+				</p>
+				<p>
+					The spike took place in The Bakery London, which is a great place for a startup gigs with fantastic people ready to jump on problem and help. We run it for 4 days (Tuesday to Friday) with one day of preparation (Monday) and demo to business on the last day.
+				</p>
+				<h2>Technologies and tools used</h2>
+				<p>
+					There was a number of candidate technologies we wanted to try during the spike. We ended up with the following:
+				</p>
+				<ul>
+					<li>Microsoft Azure for our infrastructure needs. Ubuntu VMs with Docker for spike tools and for our applications deployment</li>
+					<li>GitLab, Let’s – Chat, Taiga.IO, Jenkins, Docker, Docker registry with Front-end and ApacheDS as LDAP authentication was our development tools stack.</li>
+					<li>Meteor framework for all front-end and some backend development and Vert.x 3 with Java as a backend API services.</li>
+					<li>VirtualBox with Vagrant for consistent development VMs.
+					Atom, Visual Studio Code and IntelliJ as development IDEs</li>
+				</ul>
+				<p>	
+					Some of the technologies were familiar to us, some were entirely new. We picked the above technologies as we wanted to give them a try and provide feedback to the rest of the bank.
+				</p>
+				<p>
+					At the end we didn’t use Taiga.IO at all as good old fashioned boards with stickies worked great.
+				</p>
+				<h2>Findings and lessons learned</h2>
+				<p>
+					The bellow findings represent my thoughts after holding conversations with others in the team.
+				</p>
+				<h2>1. Location is important</h2>
+				<p>
+					Being away from the office in a different location changes how you think. I mean it. Many things adds up towards it. Lack of dress code and non corporate style of office made everyone feel relaxed. Food and drinks took away the need of thinking about those things during the day. Little technical touches made us being more productive. Things like fast and easy Wireless Internet, big flatscreen connected to Apple TV so that everyone could share their screen when needed.
+				</p>
+				<img src="images/cow01.jpg" alt="toy cow" class="pull-right img-thumbnail"/>
+
+				<h2>2. Cross functional, co-located team is important</h2>
+				<p>
+					It was great for all of us to sit around one big table, where we could pair with each other, ask each other questions or simply showcase what we’ve just done. Business (or product) owner could provide constant feedback and get us on the right path. Spike team in turn could immediately report back what was technical doable or what would take more time than we had.
+				</p>
+				<p>
+					The range of different skills across our team meant that we could handle all aspects of delivery lifecycle: design, development, testing and release.
+				</p>
+				<p>
+					There was simply no time wasting and no communication issues.
+				</p>
+				<h2>3. Having a leader is important</h2>
+				<p>
+					Having a leader is important as we got constantly refocused on the goal and next piece of work to handle.
+				</p>
+				<p>
+					A leader is not there to manage! Role of a leader is to propose initial structure and adapt it as we go along. Innovation spike is no time and place for a project manager.
+				</p>
+				<p>
+					In our case, our Mighty Leader prepared everything for the spike, time, place and the right people. On the first day of spike he introduced initial structure. We had a session with product owner, than we jumped to a small design phase and we started coding. In average, once every 3 hours we stopped and synched on what we managed to do.
+				</p>				
+				<h2>4. Coming prepared is important</h2>
+				<p>
+					As I mentioned earlier the innovation spike is about exploring new technologies. It’s a learning exercise. However, we did prepare a bit and here’s why. Having a good starting point saves time.
+				</p>
+				<p>
+					Not everyone have to prepare on every aspects of the spike. I took time to learn a bit about Azure Cloud and prepare some basic infrastructure for our team. Others did complete introduction and tutorials on Meteor framework. Someone else created Mockup APIs. We all learned from each other. Someone always had an answer to a problem others were facing. Being prepared is
+					always good.
+				</p>				
+				<h2>5. Simple and good enough is GOOD … ENOUGH</h2>
+				<p>
+					Simple and good enough is more than enough for the innovation spike because it’s easier and faster to make. At the end, the final product is something that could be simply thrown away or taken as a proof of concept for a bigger project.
+				</p>
+				<p>
+					We were constantly reminded about not paying to much attention to unnecessary details, but to focus on the business functionality and pushing boundary of the tested technology.
+				</p>
+				<h2>Summary</h2>
+				<p>
+					Innovation spike was great learning experience. Finding out about new technologies and business opportunities. It was also great fun to be on. The key to its success was location, cross-functional team and being prepared. Having a good and focused leader made us very productive and good enough approach caused us to deliver successful and working proof of concept in a very short time.
+				</p>
+			</section>
+			<section id="sidebar" class="col-md-4 col-sm-3">
+				<h1>The SideBar</h1>
+				<p>
+					<ul>
+						<li><a href="#">June 2016</a></li>
+						<li><a href="#">May 2016</a></li>
+						<li><a href="#">April 2016</a></li>
+						<li>Some things</li>
+						<li>Some other things</li>
+					</ul>
+				</p>
+				<img src="images/astroturf.jpg" alt="grass">
+			</section>			
+		</section>
+		<footer class="container"></footer>
+	</div>
+</body>
+</html>
