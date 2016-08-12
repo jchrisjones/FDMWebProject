@@ -1,0 +1,32 @@
+form {
+	display: table;
+	padding: 10px;
+	border: thin dotted #7e7e7e;
+	background-image: url(../images/astroturf.jpg)
+	background-color: #289448;
+}
+
+form textarea {
+	width: 500px;
+	height: 200px;
+}
+
+form p {
+	font-size: 200%;
+}
+
+div.tableRow {
+	display: table-row;
+}
+
+div.tableRow p {
+	display: table-cell;
+	vertical-align: top;
+	padding: 3px;
+}
+div.tableRow p:first-child {
+	text-align: right;
+}
+p.heading {
+	font-weight: bold;
+}

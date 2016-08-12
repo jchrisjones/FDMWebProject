@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Dougal Blogs</title>
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/bootstrap-navbar-theme.css"/>
+	<link rel="stylesheet" href="css/site.css" />
+	<link rel="icon" href="images/cows.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/site.js"></script>
+</head>
+<body>
+	<div id="page">
+		<header class="container">
+			<div id="menu" class="navbar navbar-default navbar-fixed-top">
+				<div class="navbar-header">
+					<button class="btn btn-success navbar-toggle"
+								   data-toggle="collapse"
+								   data-target=".navbar-collapse"><span class="glyphicon
+								   glyphicon-menu-hamburger"></span></button>
+					<div id="logo">
+						<a href='index.html'><h3>Dougal Blogs</h3></a>
+					</div>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="nav"><a href="index.html">Home</a></li>
+						<li class="nav"><a href="bloglist.html">Blogs</a></li>
+						<li class="nav"><a href="createBlog.html">Create Blog</a></li>
+						<li class="nav active"><a href="contactUs.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="banner" class="row">
+				<img src="images/banner_edit1.jpg" alt="banner" class="col-md-12 col-lg-12 img-thumbnail"/>
+			</div>
+		</header>		
+		<section id="body"  class="container">			
+			<form method="post" class="col-md-8 col-md-offset-1" id="form1"
+				  action="" novalidate="novalidate"
+				  onsubmit="alert('Thank you for your email. Mrs Doyle will reply soon!')">
+				<fieldset>
+					<legend>Contact Us</legend>
+					<div>
+						<label  for="firstname">First Name</label>
+						<input id="firstname" type="text" name="firstname" title="Please enter your first name">
+					</div>
+					<div>
+						<label  for="lastname">Last Name</label>
+						<input id="lastname" type="text" name="lastname" title="Please enter your last name">
+					</div>
+					<div>
+						<label for="email">Your Email</label>
+						<input id="email" type="email" name="email" title="Please enter your email">
+					</div>
+					<div>
+						<label>Message</label>
+						<br/>
+						<textarea rows="4" cols="50" name="comment" form="form1" placeholder="Enter message here"></textarea>
+					</div>
+						<input class="submit btn btn-success" type="submit" value="Submit">
+					<div class="error"></div>
+				</fieldset>
+			</form>
+
+			
+		</section>
+		<footer class="container">
+            © 2016, DougalGroup
+            <br>
+            All trademarks and registered trademarks appearing on 
+            this site are the property of their respective owners.
+		</footer>
+	</div>
+</body>
+</html>

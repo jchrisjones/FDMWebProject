@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<body>
+    <div id="testing">
+
+    </div>
+<script>
+
+    function init() {
+        var url = "./xml/frted.xml"
+        var request = new XMLHttpRequest();
+        request.onreadystatechange = function () {
+            if (request.readyState == 4 && request.status == 200) {
+                myFunction(request);
+            }
+        };
+        request.open("GET", "frted.xml", true);
+        request.send();
+        function myFunction(xml) {
+            var xmlDoc = xml.responseXML;
+            var x = xmlDoc.getElementsByTagName("ENTRY")[0].childNodes[0];
+            console.log(x);
+            document.getElementById("testing").innerHTML = x.data;
+        }
+    }
+
+    window.onload = init;
+</script>
+</body>
+</html>
