@@ -2,17 +2,115 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Dougal Blogs</title>
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Karla' />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/clean-blog.bootstrap-theme.min.css"/>
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Karla' />
-    <link rel="stylesheet" href="css/setup.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Dougal Blogs</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>	
+	<link rel="stylesheet" href="css/bootstrap-navbar-theme.css"/>
+	<link rel="stylesheet" href="css/blog.css"/>
+	<link rel="stylesheet" href="css/site.css"/>
+	<link rel="icon" href="images/cows.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="js/submitinfo.js"></script>
 </head>
 <body>
-
+<div id="page">
+	<header class="container">
+		<div id="menu" class="navbar navbar-default navbar-fixed-top">
+			<div class="navbar-header">
+				<button class="btn btn-success navbar-toggle"
+							   data-toggle="collapse"
+							   data-target=".navbar-collapse"><span class="glyphicon
+							   glyphicon-menu-hamburger"></span></button>
+				<div id="logo">
+					<a href='index.html'><h3>Dougal Blogs</h3></a>
+				</div>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="nav"><a href="index.html">Home</a></li>
+					<li class="nav"><a href="bloglist.html">Blogs</a></li>
+					<li class="nav active"><a href="createBlog.html">Create Blog</a></li>
+					<li class="nav"><a href="contactUs.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="banner" class="row">
+			<img src="images/banner_edit1.jpg" alt="banner" class="col-md-12 img-thumbnail"/>
+		</div>
+	</header>	
+	<section id="body">
+		<div id="form" class="col-md-10 col-md-offset-1">
+			<h1>Blog Creation</h1>
+			<h2>Fill out the form below to create a blog and your first entry</h2>
+			<form action="text.txt" method="get">
+				<div class="tableRow">
+					<p class="heading"> Details </p>
+					<p></p>
+				</div>
+				<div class="tableRow">
+					<p> Name: </p>
+					<p> <input type="text" name="name" value="" placeholder="Fr Maguire" required> </p>
+				</div>
+				<div class="tableRow">
+					<p> Email: </p>
+					<p> <input type="email" name="email" value="" placeholder="fr.dougal@aol.com" required> </p>
+				</div>	
+				<div class="tableRow">
+					<p> Password: </p>
+					<p> <input type="password" name="password" value="" minlength="4" required> </p>
+				</div>
+				</br>
+				<p class="heading">Blog Details</p>
+					<p></p>
+				<div class="tableRow">
+					<p>Name of Blog</p>
+					<p><input type="text" name="blogtitle" placeholder="Dougals Diary" required</p>
+				</div>
+				<div class="tableRow">
+					<p>
+					  Choose your genre:
+					</p>
+					<p>
+						<select name="genre">
+						  <option value="Sport">Sport</option>
+						  <option value="IT">IT</option>
+						  <option value="TV">TV</option>
+						  <option value="Other">Other</option>
+						</select>
+					</p>
+				</div>
+				<div class="tableRow">
+					<p>Title of 1st Entry</p>
+					<p><input type="text" name="entrytitle" placeholder="Spider Babies" required</p>
+				</div>
+				<div class="tableRow">
+					<p>Date of Blog Entry </p>
+					<p> <input type="date" name="date" required> </p>
+				</div>	
+				<div class="tableRow">
+					<p> First Blog Entry </p>
+					<p>
+						<textarea name="blogentry" required></textarea>
+					</p>
+				</div>
+				<div class="tableRow">
+					<p></p>
+					<p> <input type="submit" value="Create"> </p>
+				</div>
+			</form>
+		</div>
+	</section>
+	<footer class="container">
+            © 2016, DougalGroup
+            <br>
+            All trademarks and registered trademarks appearing on 
+            this site are the property of their respective owners.
+		</footer>
+	</div>
+	
+	<script src="js/site.js"></script>
 </body>
 </html>

@@ -1,7 +1,52 @@
 body {
 	background-image: url(../images/astroturf.jpg);
     font-size: small;
-    margin: 50px;
+    margin-top: 50px;
+    margin-left: 8%;
+    margin-right: 0px;
+    margin-bottom: 80px;
+	position: absolute;
+	color:	white;
+}
+
+footer
+{  
+  color:            	#ffffff;
+  text-align:       	center;
+  padding:          	15px;
+  margin:               40px 0px 0px 0px;
+  font-size:        	200%;
+  position: 			fixed;
+  bottom:				0;
+  
+}
+
+input, select, textarea {
+	color: #555555;
+}
+
+legend {
+	color: white;
+	font-size: 300%
+}
+
+form fieldset div label{
+	font-size: 200%;
+}
+
+#form1 label.error {
+    color: yellow;
+    font-size: large;
+    font-weight: bold;
+    display: inline;
+    margin: 4px 0 5px 0px;
+    padding: 0;
+    text-align: right;
+    width: 400px;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
 }
 
 #menu {
@@ -16,6 +61,17 @@ body {
 
 section div h1{
     font-size: 400%;
+	text-align: center;
+}
+
+#bloggers {
+	text-align: center;
+}
+
+.carousel-caption h4, .carousel-caption p   {
+	color: yellow;
+    font-weight: bold;
+    font-size: large;
 }
 
 .container {
@@ -27,6 +83,11 @@ section div h1{
 .img-thumbnail {
 	background-image: url(../images/astroturf.jpg);
 	border-width: 0px;
+}
+
+.img-circle {
+    margin: 10px;
+    border: ridge yellow 5px;
 }
 
 /*

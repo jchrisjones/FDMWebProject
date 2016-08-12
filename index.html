@@ -1,41 +1,109 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Dougal Blogs</title>
-	<link rel="stylesheet" href="css/setup.css" />        
-	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/bootstrap-navbar-theme.css"/>
+	<link rel="stylesheet" href="css/site.css" />
+	<link rel="icon" href="images/cows.png">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="js/site.js"></script>
 </head>
-
-<body>         
+<body>
 	<div id="page" class="container">
-		<div id="header">
-			<img src="images/banner_edit1.jpg" alt="A field of cows" style="height:100%;width:100%" />
-		</div>
-		<div id="navbar">home about catagories</div>
-		<div id="carosel">pictures</div>
-		
-		
-		
-		<div id="tableContainer">
-			<div id="tableRow">
-				<div id="blog1">#1</div>
-				<div id="blog2">#2</div>
+		<header class="row col-md-12">
+			<div id="menu" class="navbar navbar-default navbar-fixed-top">
+				<div class="navbar-header">
+					<button class="btn btn-success navbar-toggle"
+								   data-toggle="collapse"
+								   data-target=".navbar-collapse"><span class="glyphicon
+								   glyphicon-menu-hamburger"></span></button>
+					<div id="logo">
+						<a href='index.html'><h3>Dougal Blogs</h3></a>
+					</div>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="nav active"><a href="index.html">Home</a></li>
+						<li class="nav"><a href="bloglist.html">Blogs</a></li>
+						<li class="nav"><a href="createBlog.html">Create Blog</a></li>
+						<li class="nav"><a href="contactUs.html">Contact</a></li>
+					</ul>
+				</div>
 			</div>
-			<div id="tableRow">
-				<div id="blog3">#3</div>
-				<div id="blog4">#4</div>
+			<div id="banner" class="row">
+				<img src="images/banner_edit1.jpg" alt="banner" class="col-md-12 col-lg-12 img-thumbnail"/>
 			</div>
-		</div>
-		
-		
-		
-		<div id="footer">copyright </div>
-	</div>       
+		</header>		
+		<section id="body"  class="container">
+			<div id="title" class="">
+				<h1>Dougal Blogs: Simple blogging for simple people.<h1>
+			</div>			
+			<hr/>
+			<div class="row hidden-xs">
+				<div class="col-sm-7 col-sm-offset-3">
+				<div id="theCarousel" class="carousel slide" data-interval="3000">				
+				<ol class="carousel-indicators">
+					<li data-target="#theCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#theCarousel" data-slide-to="1"></li>
+					<li data-target="#theCarousel" data-slide-to="2"></li>
+					<li data-target="#theCarousel" data-slide-to="3"></li>
+				</ol>				
+					<div class="carousel-inner">
+						<div class="item active">
+							<a href="bloglist.html">
+							<img src="images/topics/cow01.jpg" alt="toy cows" class="img-responsive"/>
+							<div class="carousel-caption">
+								<h4>IT</h4>
+								<p>Rants on computers</p>
+							</div>
+							</a>							
+						</div>
+						<div class="item">
+							<a href="bloglist.html">
+							<img src="images/topics/carefulnow.jpg" alt="careful now" class="img-responsive"/>
+							<div class="carousel-caption">
+								<h4>Politics</h4>
+								<p>Discussions on politics</p>
+							</div>
+							</a>
+						</div>
+						<div class="item">
+							<a href="bloglist.html">
+								<img src="images/topics/dougalflag.jpg" alt="flag" class="img-responsive"/>
+								<div class="carousel-caption">
+									<h4>Sport</h4>
+									<p>Fun with sport</p>
+								</div>
+							</a>
+						</div>
+						<div class="item">
+							<a href="bloglist.html">
+							<img src="images/topics/tv.jpg" alt="sign" class="img-responsive"/>
+							<div class="carousel-caption">
+								<h4>TV</h4>
+								<p>Chat about shows</p>
+							</div>
+							</a>
+						</div>
+					</div>
+					
+					<a href="#theCarousel" class="carousel-control left" data-slide="prev"><span class="icon-prev"></span></a>
+					<a href="#theCarousel" class="carousel-control right" data-slide="next"><span class="icon-next"></span></a>
+					
+				</div>
+				</div>
+			</div>			
+		</section>
+		<footer class="container">
+            © 2016, DougalGroup
+            <br>
+            All trademarks and registered trademarks appearing on 
+            this site are the property of their respective owners.
+		</footer>
+	</div>
 </body>
 </html>
